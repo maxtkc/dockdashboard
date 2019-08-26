@@ -50,3 +50,13 @@ Needs to include:
   - Reopen
 - DM signature/initials
   - Submit button that saves the data and resets the page for the next day
+
+
+{
+    Sunset: "8/24/2019, 11:22:07 PM",
+    Weather: [
+        {date: "8/24/2019, 5:22:07 PM", temperature: 80, weather: "Cloudy", windDirection: 90, windSpeed: 15, flag: "Yellow", restrictions: "None"}
+        {date: "8/24/2019, 7:22:07 PM", temperature: 84, weather: "Cloudy", windDirection: 180, windSpeed: 10, flag: "Green", restrictions: "Pink sails"}
+        {date: "8/24/2019, 9:22:07 PM", temperature: 77, weather: "Cloudy", windDirection: 45, windSpeed: 11, flag: "Green", restrictions: "Pink sails"}
+    ]
+}
