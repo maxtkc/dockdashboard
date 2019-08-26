@@ -31,10 +31,6 @@ function get_table_data(id) {
     arr[i] = [];
     $(row).children("td").each((j, cell) => {
       arr[i][j] = cell.innerHTML;
-      console.log(arr);
-      console.log(cell.innerHTML);
-      console.log($(cell));
-      console.log(i + ", " + j);
     });
   });
   return arr;
