@@ -4,7 +4,7 @@ const WebSocket = require('ws');
 
 const wss = new WebSocket.Server({ port: 40510 });
 
-let test_table_data = "[[],[\"Mark\",\"Otto\",\"@mdo\"],[\"Jacob\",\"Thornto\",\"@fat\"],[\"Larry\",\"the Bird\",\"@twitter\"]]";
+let test_table_data = "[{\"make\":\"Toyot\",\"model\":\"Celica\",\"price\":35000},{\"make\":\"Ford\",\"model\":\"Mondeo\",\"price\":32000},{\"make\":\"Porsche\",\"model\":\"Boxter\",\"price\":72000}]";
 
 wss.on('connection', function connection(ws) {
   ws.send(test_table_data);
