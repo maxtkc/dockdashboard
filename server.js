@@ -4,7 +4,8 @@ const WebSocket = require('ws');
 
 const wss = new WebSocket.Server({ port: 40510 });
 
-let test_table_data = "[{\"make\":\"Toyot\",\"model\":\"Celica\",\"price\":35000},{\"make\":\"Ford\",\"model\":\"Mondeo\",\"price\":32000},{\"make\":\"Porsche\",\"model\":\"Boxter\",\"price\":72000}]";
+let test_table_data = "[{\"date\":\"8/24/2019, 5:22:07 PM\",\"temperature\":80,\"weather\":\"Cloudy\",\"windDirection\":90,\"windSpeed\":15,\"flag\":\"Yellow\",\"restrictions\":\"None\"},{\"date\":\"8/24/2019, 7:22:07 PM\",\"temperature\":84,\"weather\":\"Cloudy\",\"windDirection\":180,\"windSpeed\":10,\"flag\":\"Green\",\"restrictions\":\"Pink sails\"},{\"date\":\"8/24/2019, 9:22:07 PM\",\"temperature\":77,\"weather\":\"Cloudy\",\"windDirection\":45,\"windSpeed\":11,\"flag\":\"Green\",\"restrictions\":\"Pink sails\"}]"
+
 
 wss.on('connection', function connection(ws) {
   ws.send(test_table_data);
